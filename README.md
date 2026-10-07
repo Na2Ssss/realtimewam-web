@@ -10,14 +10,14 @@ Run from the repository root:
 python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
-Open http://localhost:8000. Result tables are embedded in `index.html` and remain visible without JavaScript. Benchmark and real-world tables have independent native radio selectors that work without JavaScript. JavaScript only coordinates video playback.
+Open http://localhost:8000. Use an HTTP server rather than opening `index.html` directly so the result table can load its JSON data.
 
 ## Edit
 
 - `index.html`: page content and sections.
 - `style.css`: responsive layout and colors.
-- `app.js`: video playback coordination.
-- `assets/results.json`: main-table reference values; the displayed benchmark, real-world, and ablation tables are embedded in `index.html`.
+- `app.js`: backbone switching and video playback coordination.
+- `assets/results.json`: benchmark table values.
 - `assets/paper.pdf`: anonymous paper.
 - `assets/task-*.mp4`: five demonstration clips.
 
