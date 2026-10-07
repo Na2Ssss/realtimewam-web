@@ -2,3 +2,27 @@
 
 /* Keep row labels aligned with numeric data and preserve full video frames. */
 tbody th{background:transparent;font-size:14px;border-top:1px solid #e8eef1}tr.ours-row th{font-weight:700;color:inherit}thead th{font-size:14px}.media-title{font-size:12px}.media-foot,.metrics small,.metric-note{font-size:12px}.metrics p{font-size:14px}
+
+/* Results remain readable without scripts or a separate data request. */
+[hidden]{display:none!important}
+.result-panel+.result-panel{margin-top:24px}
+.result-panel[hidden]+.result-panel{margin-top:0}
+.task-results{margin-top:48px}
+.task-results h3{font-size:26px;font-weight:600}
+.task-results .section-heading{margin-bottom:22px}
+.native-row{border-bottom:2px solid #dbe5e9}
+.average-row{background:#eef5f8;font-weight:700}
+.average-row th{font-weight:700;color:#284c60}
+#ablations table{min-width:570px}
+.task-results table{min-width:620px}
+
+/* A two-line paper title with consistent heading alignment. */
+.hero h1{font-size:clamp(29px,4.15vw,51px);line-height:1.18;letter-spacing:-.04em}
+.hero h1 .title-line{display:block;color:#172c37}
+.hero h1 .title-accent{color:#527f93;margin-top:3px}
+.section-heading.horizontal{align-items:center}
+.section-heading h2{line-height:1.2;text-wrap:balance}
+.nav nav{align-items:center}
+@media(max-width:760px){.hero h1{font-size:clamp(14px,4.7vw,31px)}.hero h1 .title-line{white-space:nowrap}.section-heading.horizontal{align-items:flex-start}}
+
+.task-results th[colspan]{text-align:center}
